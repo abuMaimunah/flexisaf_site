@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cyber Lounge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link >
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="control.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  </head>
+  <body>
+    <div class="nav">
+      <div width="30%"><a id="logo" href="#">Cyber Lounge</a></div>
+      <input id="menu-toggle"  type="checkbox" >
+      <label for="menu-toggle" class="hamburger"></label>
+      <div width="70%" class="nav-2">
+        <a href="#">How to Order</a>
+        <div class="services">
+        <a href="#">Our Services v</a>
+        <div class="dropdown-service">
+          <ul>
+            <li><a href="#">Assignment Writing</a></li>
+            <li><a href="#">Project Writing</a></li>
+            <li><a href="#">Thesis Writing</a></li>
+            <li><a href="#">One-one consultation</a></li>
+            <li><a href="#">Digital Literacy Training</a></li>
+            <li><a href="#">Web Development</a></li>
+          </ul>
+        </div>
+        </div>
+        <a href="#">Our Team</a>
+        <div class="resources">
+          <a id="resources" href="#">Resources v</a>
+          <div class="dropdown-resources">
+            <ul>
+              <li><a href="#">Computer Education</a></li>
+              <li><a href="#">Habits of High Achieves</a></li>
+              <li><a href="">How to submit an assignment</a></li>
+            </ul>
+          </div>
+        </div>
+        <a href="#">Blog</a>
+        <div>
+          <a href="#" target="_blank" class="nav-btn">Login</a>
+          <a href="signup.html" target="_blank" class="nav-btn">Sign Up</a>
+        </div>
+      </div>
+    </div>
+    <h1><em>A digital ocean of <span class="hero-text">Academic</span> and <span class="hero-text">Career</span> success</em></h1>
+    <form class="assignment-details" action="mailto:muhammadulimaj@gmail.com" method="post" enctype="text/plain">
+      <input class="item" list="assignmenttype" type="text" placeholder="Choose assignment type" required>
+      <datalist id="assignmenttype">
+        <option value="Take home"></option>
+        <option value="UG Project"></option>
+        <option value="Msc Thesis"></option>
+        <option value="Powerpoint slide"></option>
+        <option value="Capsone Project"></option>
+        <option value="CV revamp"></option>
+      </datalist>
+      <input class="item" type="text" placeholder="Type in your assignment" required>
+      <input class="item" list="deadline" type="text" placeholder="Choose deadline" required>
+      <datalist id="deadline">
+        <option value="1 day"></option>
+        <option value="2 days"></option>
+        <option value="1 week"></option>
+        <option value="1 month"></option>
+      </datalist>
+      <button class="item" type="submit">Submit</button>
+    </form>
+    <h2>Customers are talking about CyberLounge</h2>
+    <div class="slider-container">
+      <div class="card">
+        <img class="card-img" src="profile2.jpg" alt="Card 1">
+        <p>Having Cyber Lounge took care of my assignments was the best decision I have ever made</p>
+      </div>
+      <div class="card">
+        <img class="card-img" src="profile.jpg" alt="Card 1">
+        <p>I finally got an A in mathematics exams, that is unbelievable</p>
+      </div>
+      <div class="card">
+        <img class="card-img" src="profile3.jpg" alt="Card 1">
+        <p>Cyber Lounge not only solved my assignment, but also provided an explanation. That was incredible</p>
+      </div>
+    </div>
+    <h2 >Frequently asked Questions (FAQ)</h2>
+    <div id="section3" class="faq">
+      <div id="faq1">
+        <div id="q1" onclick="qu()">+</div>
+        <p id="p1">How fast can you deliver my work</p>
+      </div>
+      <div id="faq2">
+        <div id="q2" onclick="">+</div>
+        <p id="p2">How fast can you deliver my work</p>
+      </div>
+      <div id="faq3">
+        <div id="q3" onclick="">+</div>
+        <p id="p3">How fast can you deliver my work</p>
+      </div>
+      <div id="faq3">
+        <div id="q3" onclick="">+</div>
+        <p id="p3">How fast can you deliver my work</p>
+      </div>
+    </div>
+    <div class="footer">
+      <div>
+        <p><a href="#">Cyber Lounge</a></p>
+        <p><a href="#">copyright cyberlounge@2025</a></p>
+        <p><a href="#">Book a one-one</a></p>
+      </div>
+      <div>
+        <p>Legal</p>
+        <p><a href="#">cookies policy</a></p>
+        <p><a href="#">privacy policy</a></p>
+        <p><a href="#">refund policy</a></p>
+        <p><a href="#">Terms and condition</a></p>
+      </div>
+      <div>
+        <p>Company</p>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">Blogs</a></p>
+        <p><a href="#">Testimonials</a></p>
+      </div>
+      <div id="socials">
+        <p>Contact us</p>
+        <a href="https://wa.me/+2349061921675" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/abumaimunah" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/abuMaimunah" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:muhammadulimaj@example.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </body>
+</html>

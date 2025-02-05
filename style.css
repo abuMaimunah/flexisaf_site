@@ -1,0 +1,364 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 140px;
+}
+.nav{
+  width: 100%;
+  display: flex;
+  background-color: white; /*#4E4B5C;*/
+  justify-content: space-between;
+  align-items: center;
+  padding:30px;
+  font-weight: 300;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top:0;
+  left: 0;
+  font-family: "Rubik";
+}
+.nav > *{
+
+}
+.nav-2{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+  align-items: center;
+
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+#logo{
+  color: #104FA6;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.nav-btn{
+  background-color: #104FA6;;
+  color: white;
+  font-family: "Rubik", serif;
+  font-size: 1rem;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dropdown-service ul{
+ margin: 0;
+ padding: 0;
+ list-style: none; 
+}
+.dropdown-service ul li{
+  margin: 7px 0;
+}
+.services{
+  position: relative;
+}
+
+.resources{
+  position: relative;
+}
+.dropdown-resources ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.dropdown-resources ul li{
+  margin: 7px 0;
+}
+.dropdown-resources{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  padding: 10px;
+  display: none;
+  border-radius: 5px;
+}
+.dropdown-service{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  padding: 10px;
+  display: none;
+  border-radius: 5px;
+}
+.resources:hover .dropdown-resources{
+  display: block;
+}
+.resources:hover > *{
+  color: #104FA6;
+}
+
+.services:hover .dropdown-service{
+  display: block;
+  color: #104FA6;
+}
+.services:hover > *{
+  color: #104FA6;
+}
+
+.hero-text{
+  color: #104FA6;
+}
+h1{
+  text-align: center;
+}
+form.assignment-details{
+  display: grid;
+  grid-template-columns: 20% 20% 20%;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+  font-family: "Rubik", serif;
+  font-weight: 100;
+  padding: 40px;
+}
+form.signup{
+  
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-family: "Rubik", sans-serif;
+}
+form.signup input{
+  display: block;
+}
+form.signup label {
+  display: block;
+  margin: 10px 0 5px;
+}
+form.signup input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.education-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  gap: 10px;
+  margin-bottom: 10px;
+}
+form.signup button {
+  width: 100%;
+  padding: 10px;
+  background-color: #104FA6;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.education-options label {
+  display: flex;
+  align-items: center; /* Ensures text is aligned with checkbox */
+  gap: 8px; /* Adds spacing between checkbox and text */
+  font-weight: normal;
+  background: #f9f9f9;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.education-options input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: #104FA6; /* Changes checkbox color */
+}
+
+form.signup h2 {
+  text-align: center;
+  color: #104FA6;
+}
+input::placeholder{
+  color: rgb(41, 35, 35);
+  font-style: italic;
+}
+button.item:hover{
+  background-color: white;
+  color: #104FA6;
+}
+
+.item{
+  margin-top: 15px;
+  padding: 10px;
+  background: white;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px white ;
+}
+.item:nth-child(6){
+  margin-top: -5px;
+  margin-bottom: 15px;
+  width: 60%;
+  color: white;
+  background-color: #104FA6;
+  grid-column: 2/3;
+  justify-self: center;
+}
+
+datalist{
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+  margin-top: 20px;
+  text-align: center;
+}
+.card-img{
+  max-width: 190px;
+  max-height: 150px;
+}
+.slider-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+.card{
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.faq{
+  display: grid;
+  grid-template-columns: 30% 30%;
+  justify-content: center;
+  align-content: center;
+  gap: 2rem;
+}
+#q1, #q2, #q3, #q4, #p1, #p2, #p3, #p4{
+  display: inline;
+}
+#q1, #q2, #q3, #q4{
+  width: 20px;
+  background-color: #104FA6;
+  color: white;
+  font-size: 1.1rem;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#faq1, #faq2, #faq3,#faq4{
+  
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  gap: 2rem;
+  margin-top: 5rem;
+  justify-content: center;
+  align-items: start;
+  background-color: black;
+  color: white;
+}
+.footer a{
+  text-decoration: none;
+  color: white;
+}
+
+#socials a{
+  font-size: 1.6rem;
+  margin: 5px;
+}
+#section3{
+  margin-top: 25px;
+}
+
+.hamburger{
+  font-size: 2rem;
+  cursor: pointer;
+  color: black;
+  display: none;
+}
+.hamburger::after{
+  content: "\2630";
+}
+#menu-toggle{
+  display: none;
+}
+@media screen and (max-width: 1040px){
+  .nav{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  .hamburger {
+    display: block;
+    position: relative;
+  }
+  .nav-2{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 60%;
+    background-color: white;
+    width: 40%;
+    padding: 15px;
+    justify-content: start;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #menu-toggle:checked + .hamburger + .nav-2{
+    display: flex;
+  }
+  #menu-toggle:checked + .hamburger::after{
+    content: "\2715";
+  }
+  form.assignment-details{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: center;
+    align-content: center;
+    font-size: 15px;
+    gap: 15px;
+    font-family: "Rubik", serif;
+    font-weight: 100;
+    padding: 25x;
+  }
+}
